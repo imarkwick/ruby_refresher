@@ -25,3 +25,19 @@ end
 def add_element_to_beginning_of_array(array, element)
 	array.unshift(1)
 end
+
+def array_sort_by_last_letter_of_word(array)
+	array.rotate(1)
+end
+
+def get_first_half_of_string(string)
+	string[0..2]
+end
+
+
+
+
+
+
+
+
