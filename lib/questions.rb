@@ -34,6 +34,26 @@ def get_first_half_of_string(string)
 	string[0..2]
 end
 
+def number_of_elements_that_are_palindromes(array)
+	array.select { |v| v if v == v.reverse }.length
+end
+
+def shortest_word_in_array(array)
+	array.select { |v| v if v.length == 1 }
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
