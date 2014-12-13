@@ -39,7 +39,19 @@ def number_of_elements_that_are_palindromes(array)
 end
 
 def shortest_word_in_array(array)
-	array.select { |v| v if v.length == 1 }
+	array.min { |a, b| a.length <=> b.length }
+end	
+
+def longest_word_in_array(array)
+	array.max { |a, b| a.length <=> b.length }
+end
+
+def total_of_array(array)
+	array.inject { |sum, v| sum + v }
+end
+
+def double_array(array)
+	array * 2
 end
 
 
