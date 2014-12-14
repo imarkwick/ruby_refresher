@@ -54,6 +54,23 @@ def double_array(array)
 	array * 2
 end
 
+def turn_symbol_into_string(sym)
+	sym.to_s
+end
+
+def average_of_array(array)
+	array.inject { |sum, v| sum + v } / array.size
+end
+
+def get_elements_until_greater_than_five(array)
+	array[0..5]
+end
+
+def convert_array_to_a_hash(array)
+	Hash[*array.flatten]
+end
+
+
 
 
 
