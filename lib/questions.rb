@@ -86,6 +86,18 @@ def round_up_number(number)
 	number.ceil
 end
 
+def round_down_number(number)
+	number.floor
+end
+
+# def titleize_a_string(string)
+# 	string.each { |word| word.capitalize! }
+# end
+
+
+
+
+
 
 
 
