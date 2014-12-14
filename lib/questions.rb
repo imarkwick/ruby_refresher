@@ -70,7 +70,13 @@ def convert_array_to_a_hash(array)
 	Hash[*array.flatten]
 end
 
+def swap_keys_and_values_in_a_hash(hash)
+	hash.invert
+end
 
+def add_together_keys_and_values(hash)
+	hash.flatten.inject { |sum, x| sum + x }
+end
 
 
 
