@@ -78,6 +78,14 @@ def add_together_keys_and_values(hash)
 	hash.flatten.inject { |sum, x| sum + x }
 end
 
+def remove_capital_letters_from_string(string)
+	string.delete "H" + "J" + "D"
+end
+
+def round_up_number(number)
+	number.ceil
+end
+
 
 
 
