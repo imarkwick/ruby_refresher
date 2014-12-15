@@ -133,17 +133,13 @@ end
 def square_root_of(number)
 	Math.sqrt(number)
 end
+
+def word_count_a_file(file_path)
+	File.open(file_path) do |file| 
+		file.read.split(' ').length
+	end
+end
  
-
-
-
-
-
-
-
-
-
-
 
 
 
