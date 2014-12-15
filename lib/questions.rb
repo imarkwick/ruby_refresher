@@ -34,6 +34,14 @@ def get_first_half_of_string(string)
 	string[0..2]
 end
 
+def make_numbers_negative(number)
+	number > 0 ? number * -1 : number
+end
+
+def separate_array_into_even_and_odd_numbers(array)
+	array.partition { |v| v.even? }
+end
+
 def number_of_elements_that_are_palindromes(array)
 	array.select { |v| v if v == v.reverse }.length
 end
@@ -90,9 +98,10 @@ def round_down_number(number)
 	number.floor
 end
 
-# def titleize_a_string(string)
-# 	string.each { |word| word.capitalize! }
+# def is_a_3_dot_range?(range)
+# 	(range.to_s).length > 5
 # end
+
 
 
 
