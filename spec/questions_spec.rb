@@ -165,13 +165,13 @@ describe 'Friday test questions' do
     expect(n).to eq 'The Lion the Witch and the Wardrobe'
   end
 
-  # it 'check_a_string_for_special_characters' do
-  #   a = check_a_string_for_special_characters 'ABCdef123'
-  #   b = check_a_string_for_special_characters 'ABC@def123!'
+  it 'check_a_string_for_special_characters' do
+    a = check_a_string_for_special_characters 'ABCdef123'
+    b = check_a_string_for_special_characters 'ABC@def123!'
 
-  #   expect(a).to be_false
-  #   expect(b).to be_true
-  # end
+    expect(a).to be false
+    expect(b).to be true
+  end
 
   it 'get_upper_limit_of' do
     n = get_upper_limit_of 1..20
@@ -186,12 +186,12 @@ describe 'Friday test questions' do
     expect(b).to be true
   end
 
-  # it 'square_root_of' do
-  #   a = square_root_of 9
-  #   b = square_root_of 3
-  #   expect(a).to eq 3.0
-  #   expect(b).to eq 1.7320508075688772
-  # end
+  it 'square_root_of' do
+    a = square_root_of 9
+    b = square_root_of 3
+    expect(a).to eq 3.0
+    expect(b).to eq 1.7320508075688772
+  end
 
   # it 'word_count_a_file' do
   #   n = word_count_a_file 'data/lorem.txt'

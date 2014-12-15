@@ -118,6 +118,10 @@ def titleize_a_string(string)
 	string.capitalize.split(' ').map { |v| ['a', 'and', 'the'].include?(v) ? v : v.capitalize }.join(' ')
 end
 
+def check_a_string_for_special_characters(string)
+	string.include?('!')
+end
+
 def get_upper_limit_of(range)
 	range.last
 end
@@ -125,6 +129,12 @@ end
 def is_a_3_dot_range?(range)
 	(range).to_a.length < 20
 end
+
+def square_root_of(number)
+	Math.sqrt(number)
+end
+ 
+
 
 
 
