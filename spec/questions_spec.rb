@@ -33,11 +33,11 @@ describe 'Friday test questions' do
     expect(n).to eq ['god', 'yeknom', 'tnahpele']
   end
 
-  # it 'every_possible_pairing_of_students' do
-  #   n = every_possible_pairing_of_students(['Bob', 'Dave', 'Clive']) || []
-  #   sorted = n.map {|pair| pair.sort}.sort_by {|pair| [pair.first, pair.last] }
-  #   expect(sorted).to eq [['Bob', 'Clive'], ['Bob', 'Dave'], ['Clive', 'Dave']]
-  # end
+  it 'every_possible_pairing_of_students' do
+    n = every_possible_pairing_of_students(['Bob', 'Dave', 'Clive']) || []
+    sorted = n.map {|pair| pair.sort}.sort_by {|pair| [pair.first, pair.last] }
+    expect(sorted).to eq [['Bob', 'Clive'], ['Bob', 'Dave'], ['Clive', 'Dave']]
+  end
 
   it 'all_elements_except_first_3' do
     n = all_elements_except_first_3 [1, 2, 3, 4, 5, 6, 7]
@@ -120,10 +120,10 @@ describe 'Friday test questions' do
     expect(n).to eq({'a' => 'b', 'c' => 'd'})
   end
 
-  # it 'get_all_letters_in_array_of_words' do
-  #   n = get_all_letters_in_array_of_words ['cat', 'dog', 'fish']
-  #   expect(n).to eq ['a', 'c', 'd', 'f', 'g', 'h', 'i', 'o', 's', 't']
-  # end
+  it 'get_all_letters_in_array_of_words' do
+    n = get_all_letters_in_array_of_words ['cat', 'dog', 'fish']
+    expect(n).to eq ['a', 'c', 'd', 'f', 'g', 'h', 'i', 'o', 's', 't']
+  end
 
   it 'swap_keys_and_values_in_a_hash' do
     n = swap_keys_and_values_in_a_hash({'a' => 'b', 'c' => 'd'})
@@ -150,20 +150,20 @@ describe 'Friday test questions' do
     expect(n).to eq 4
   end
 
-  # it 'format_date_nicely' do
-  #   n = format_date_nicely Time.new(2013, 10, 31)
-  #   expect(n).to eq '31/10/2013'
-  # end
+  it 'format_date_nicely' do
+    n = format_date_nicely Time.new(2013, 10, 31)
+    expect(n).to eq '31/10/2013'
+  end
 
-  # it 'get_domain_name_from_email_address' do
-  #   n = get_domain_name_from_email_address 'alex@makersacademy.com'
-  #   expect(n).to eq 'makersacademy'
-  # end
+  it 'get_domain_name_from_email_address' do
+    n = get_domain_name_from_email_address 'alex@makersacademy.com'
+    expect(n).to eq 'makersacademy'
+  end
 
-  # it 'titleize_a_string' do
-  #   n = titleize_a_string 'the lion the witch and the wardrobe'
-  #   expect(n).to eq 'The Lion the Witch and the Wardrobe'
-  # end
+  it 'titleize_a_string' do
+    n = titleize_a_string 'the lion the witch and the wardrobe'
+    expect(n).to eq 'The Lion the Witch and the Wardrobe'
+  end
 
   # it 'check_a_string_for_special_characters' do
   #   a = check_a_string_for_special_characters 'ABCdef123'

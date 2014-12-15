@@ -18,6 +18,10 @@ def reverse_every_element_in_array(array)
 	array.reverse_each { |v| v.reverse! }
 end
 
+def every_possible_pairing_of_students(array)
+	array.combination(2).to_a
+end
+
 def all_elements_except_first_3(array)
 	array.slice(3..6)
 end
@@ -78,6 +82,10 @@ def convert_array_to_a_hash(array)
 	Hash[*array.flatten]
 end
 
+def get_all_letters_in_array_of_words(array)
+	array.map { |v| v.split(//) }.flatten.sort
+end
+
 def swap_keys_and_values_in_a_hash(hash)
 	hash.invert
 end
@@ -98,9 +106,17 @@ def round_down_number(number)
 	number.floor
 end
 
-# def is_a_3_dot_range?(range)
-# 	(range.to_s).length > 5
-# end
+def format_date_nicely(date)
+	date.strftime('%d/%m/%Y')
+end
+
+def get_domain_name_from_email_address(email)
+	email.split('@').last.split('.').first
+end
+
+def titleize_a_string(string)
+	string.capitalize.split(' ').map { |v| ['a', 'and', 'the'].include?(v) ? v : v.capitalize }.join(' ')
+end
 
 
 
