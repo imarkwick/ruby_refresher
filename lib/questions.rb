@@ -139,19 +139,8 @@ def word_count_a_file(file_path)
 		file.read.split(' ').length
 	end
 end
+
  
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
